@@ -25,19 +25,19 @@ export const SearchScreen = ({ history }) => {
 
     return (
         <div>
-            <h1>Search Screen</h1>
+            <h1>Buscador</h1>
             <hr />
             
             <div className="row">
                 
                 <div className="col-5">
-                    <h4> Search Form </h4>
+                    <h4> Ingresa los datos. </h4>
                     <hr />
 
                     <form onSubmit={ handleSearch }>
                         <input 
                             type="text"
-                            placeholder="Find your hero"
+                            placeholder="Encuentra tu Héroe"
                             className="form-control"
                             name="searchText"
                             autoComplete="off"
@@ -49,7 +49,7 @@ export const SearchScreen = ({ history }) => {
                             type="submit"
                             className="btn m-1 btn-block btn-outline-primary"
                         >
-                            Search...
+                           Buscar
                         </button>
                     </form>
 
@@ -59,14 +59,14 @@ export const SearchScreen = ({ history }) => {
 
                 <div className="col-7">
 
-                    <h4> Results </h4>
+                    <h4> Héroes encontrados. </h4>
                     <hr />
 
                     { 
                         (q ==='') 
                             && 
                             <div className="alert alert-info">
-                                Search a hero
+                                ...
                             </div>
                     }
 
